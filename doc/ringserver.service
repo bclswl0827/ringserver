@@ -1,0 +1,11 @@
+[Unit]
+Description=RingServer Service
+After=network.target
+
+[Service]
+User=root
+ExecStart=/usr/local/bin/ringserver /usr/local/etc/ringserver/ring.conf
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

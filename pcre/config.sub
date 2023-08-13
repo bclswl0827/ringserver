@@ -314,7 +314,7 @@ case $basic_machine in
 	| visium \
 	| wasm32 \
 	| x86 | xc16x | xstormy16 | xtensa \
-	| z8k | z80)
+	| z8k | z80 | loongarch64)
 		basic_machine=$basic_machine-unknown
 		;;
 	c54x)
@@ -448,7 +448,7 @@ case $basic_machine in
 	| x86-* | x86_64-* | xc16x-* | xps100-* \
 	| xstormy16-* | xtensa*-* \
 	| ymp-* \
-	| z8k-* | z80-*)
+	| z8k-* | z80-* | loongarch64-*)
 		;;
 	# Recognize the basic CPU types without company name, with glob match.
 	xtensa*)
